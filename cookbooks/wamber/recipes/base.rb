@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-%w{ git-core openssh-server curl libxml2 libxml2-dev libxml2-utils libxslt1.1 libxslt1-dev mercurial nmap python-dev python-docutils python-lxml ruby-dev screen smartmontools sqlite3 sqlite3-doc tshark unison vim xstproc }.each do |pkg|
+%w{ git-core openssh-server curl libxml2 libxml2-dev libxml2-utils libxslt1.1 libxslt1-dev mercurial nmap python-dev python-docutils python-lxml ruby-dev screen smartmontools sqlite3 sqlite3-doc tshark unison vim xsltproc }.each do |pkg|
 	package pkg
 end
 
