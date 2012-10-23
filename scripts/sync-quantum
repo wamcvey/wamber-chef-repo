@@ -1,2 +1,2 @@
 #!/bin/sh
-chef-solo -o 'recipe[wamber::base],recipe[wamber::desktop-base]'
+chef-solo -o 'role[wamber-desktop]'
