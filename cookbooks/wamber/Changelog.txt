@@ -1,0 +1,6 @@
+0.2.0:
+	Additional recipes for managing virtualization (KVM) services
+
+0.0.1:
+	Initial set of recipes for configuring base and desktop systems
+
