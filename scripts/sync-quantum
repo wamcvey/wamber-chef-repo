@@ -1,2 +1,2 @@
 #!/bin/sh
-chef-solo -o 'role[wamber-desktop]'
+chef-solo -o 'role[wamber-desktop],role[wamber-vm-server]'
