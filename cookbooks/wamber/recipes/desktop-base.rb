@@ -18,5 +18,12 @@
 #
 
 %w{ calibre mplayer2 terminator chromium-browser meld pidgin pidgin-otr synergy transmission-gtk wireshark vim-gnome }.each do |pkg|
-	package pkg
+    package pkg
 end
+
+if node[:platform] == "ubuntu"
+    %w{ breathe-icon-theme community-themes  }.each do |pkg|
+        package pkg
+    end
+end
+
