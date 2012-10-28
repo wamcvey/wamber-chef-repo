@@ -1,0 +1,12 @@
+{
+  "name": "quark.home.wamber.net",
+  "chef_environment": "_default",
+  "run_list": [
+
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

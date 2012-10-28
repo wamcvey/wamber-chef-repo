@@ -1,0 +1,13 @@
+{
+  "name": "quantum",
+  "chef_environment": "_default",
+  "run_list": [
+    "role[wamber-desktop]",
+    "role[wamber-vm-server]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}
