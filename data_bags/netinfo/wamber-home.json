@@ -1,0 +1,29 @@
+{
+	"id": "wamber-home",
+	"domain": "home.wamber.net",
+	"hosts": {
+		"quark": {
+			"interface": "eth0",
+			"network": "10.10.10.0/24",
+			"address": "10.10.10.31"
+		},
+		"goldfinger": {
+			"interface": "eth0",
+			"network": "10.10.10.0/24",
+			"address": "10.10.10.40"
+		},
+		"volante": {
+			"interface": "eth0",
+			"network": "10.10.10.0/24",
+			"address": "10.10.10.90"
+		}
+	},
+	"networks": {
+		"10.10.10.0/24": {
+			"netmask": "255.255.255.0",
+			"network": "10.10.10.0",
+			"broadcast": "10.10.10.255",
+			"gateway": "10.10.10.1"
+		}
+	}
+}
