@@ -10,9 +10,8 @@ override_attributes(
 	}
 )
 run_list(
-	"recipe[wamber::base]",
+	"role[wamber-base]",
 	"recipe[wamber::desktop-base]",
 	"recipe[dropbox]",
-	"recipe[java]",
 	"recipe[wamber::java-plugin]"
 ) 
