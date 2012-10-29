@@ -34,18 +34,8 @@ execute "stop-network-manager-dispatch" do
 	action :nothing
 end
 
-execute "stop-network-manager" do
-	command "/etc/dbus-1/event.d/25NetworkManager stop"
-	action :nothing
-end
-
-file "/etc/default/NetworkManager" do
-	content "exit"
-	notifies :execute, "execute[stop-network-manager]"
-end
-file "/etc/default/NetworkManagerDispatcher" do
-	content "exit"
-	notifies :execute, "execute[stop-network-manager-dispatch]"
+package "network-manager" do
+	action  :remove
 end
 
 iface=node[:network_interfaces][node[:hostname]][node[:vm_bridge_iface]]
