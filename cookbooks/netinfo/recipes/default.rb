@@ -23,10 +23,12 @@ net_db = data_bag_item("netinfo", node[:netinfo][:bag])
 host_info = net_db["hosts"][node[:hostname]]
 if host_info 
 	net_info = net_db["networks"][host_info["network"]]
-	network_interfaces host_info["interface"] do
-		target  host_info["address"]
-		mask    net_info["netmask"]
-		network net_info["network"]
-		gateway net_info["gateway"]
+	if host_info["interface"]
+		network_interfaces host_info["interface"] do
+			target  host_info["address"]
+			mask    net_info["netmask"]
+			network net_info["network"]
+			gateway net_info["gateway"]
+		end
 	end
 end
