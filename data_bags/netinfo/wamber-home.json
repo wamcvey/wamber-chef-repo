@@ -2,21 +2,56 @@
 	"id": "wamber-home",
 	"domain": "home.wamber.net",
 	"hosts": {
-		"quark": {
-			"interface": "eth0",
-			"network": "10.10.10.0/24",
-			"address": "10.10.10.31"
+		"netgear-gateway": {
+			"address": "10.10.10.1",
+			"aliases": ["gateway.home.wamber.net"]
 		},
 		"goldfinger": {
 			"interface": "eth0",
 			"network": "10.10.10.0/24",
-			"address": "10.10.10.40"
+			"address": "10.10.10.20",
+			"aliases": ["synergy.home.wamber.net"]
 		},
-		"volante": {
+		"quantum": {
+			"address": "10.10.10.30"
+		},
+		"quark": {
 			"interface": "eth0",
 			"network": "10.10.10.0/24",
-			"address": "10.10.10.90"
+			"address": "10.10.10.31",
+			"aliases": ["chef.home.wamber.net"],
+			"comment": "kvm on on quantum"
+		},
+		"moneypenny": {
+			"network": "10.10.10.0/24",
+			"address": "10.10.10.40"
+		},
+		"nicknack": {
+			"address": "10.10.10.80",
+			"comment": "small xp box"
+		},
+		"volante": {
+			"interface": "wlan0",
+			"network": "10.10.10.0/24",
+			"address": "10.10.10.90",
+			"comment": "wam-laptop"
+		},
+		"tivo": {
+			"address": "10.10.10.100"
+		},
+		"astonmartin": {
+			"address": "10.10.10.110",
+			"comment": "zack linux"
+		},
+		"vanquish": {
+			"address": "10.10.10.115",
+			"comment": "zack vista"
+		},
+		"largo": {
+			"address": "10.10.10.253",
+			"comment": "upstairs. Dynamic ip for now"
 		}
+
 	},
 	"networks": {
 		"10.10.10.0/24": {
