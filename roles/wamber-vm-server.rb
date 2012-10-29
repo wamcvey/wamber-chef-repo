@@ -31,6 +31,7 @@ override_attributes({
     }
 })
 run_list(
+    "role[wamber-base]",
     "recipe[network_interfaces]",
     "recipe[wamber::vm-server]",
     "recipe[sysctl]" 
